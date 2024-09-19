@@ -16,7 +16,7 @@ public class StreamLambdaHandler implements RequestStreamHandler {
 	static {
 		try {
 			System.out.println( "Inside handle static method........" );
-			handler = SpringBootLambdaContainerHandler.getAwsProxyHandler(AwsLambdaApplication.class);
+			handler = SpringBootLambdaContainerHandler.getAwsProxyHandler(AwsMysqlApplication.class);
 		} catch (ContainerInitializationException e) {
 			// if we fail here. We re-throw the exception to force another cold start
 			e.printStackTrace();

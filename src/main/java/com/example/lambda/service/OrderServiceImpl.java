@@ -6,6 +6,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.lambda.exception.CustomException;
 import com.example.lambda.exception.OrderAlreadyExistException;
@@ -22,6 +23,7 @@ public class OrderServiceImpl implements OrderService {
 	@Autowired
 	private OrderRepository repository;
 
+	@Transactional
 	@Override
 	public Order saveOrder(Order order) {
 		// return repo.save(order);

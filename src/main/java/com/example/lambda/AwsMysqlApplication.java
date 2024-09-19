@@ -8,9 +8,9 @@ import com.example.lambda.controller.HealthCheckController;
 
 @SpringBootApplication
 @Import ({HealthCheckController.class})
-public class AwsLambdaApplication {
+public class AwsMysqlApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AwsLambdaApplication.class, args);
+		SpringApplication.run(AwsMysqlApplication.class, args);
 	}
 }
